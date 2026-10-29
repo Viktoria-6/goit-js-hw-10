@@ -40,7 +40,7 @@ form.addEventListener('submit', event => {
   makeOrder(delay, shouldResolve)
     .then(resolvedDelay => {
       row.className = 'row-ok';
-      row.textContent = `✅ ${drink}  · готове · ${resolvedDelay} ms`;
+      row.textContent = `✅  ${drink}  · готове · ${resolvedDelay} ms`;
     })
     .catch(rejectedDelay => {
       row.className = 'row-err';
